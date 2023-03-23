@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2023 at 07:28 PM
+-- Generation Time: Mar 23, 2023 at 06:18 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -49,20 +49,22 @@ CREATE TABLE `food` (
   `FoodID` int(3) NOT NULL,
   `FoodName` varchar(20) NOT NULL,
   `FoodPrice` int(200) NOT NULL,
-  `FoodTypeID` int(3) DEFAULT NULL
+  `FoodTypeID` int(3) DEFAULT NULL,
+  `FoodPhoto` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `food`
 --
 
-INSERT INTO `food` (`FoodID`, `FoodName`, `FoodPrice`, `FoodTypeID`) VALUES
-(1, 'เตี๋ยวแห้ง', 45, 1),
-(2, 'เตี๋ยวต้มส้ม', 45, 1),
-(3, 'ผัดซีอิ๋วหมู', 50, 1),
-(4, 'ตำซั่ว', 45, 3),
-(5, 'มะนาวโซดา', 40, 8),
-(6, 'นมชมพูเย็น', 40, 8);
+INSERT INTO `food` (`FoodID`, `FoodName`, `FoodPrice`, `FoodTypeID`, `FoodPhoto`) VALUES
+(0, 'sdadas', 45, 1, NULL),
+(1, 'เตี๋ยวแห้ง', 45, 1, NULL),
+(2, 'เตี๋ยวต้มส้ม', 45, 1, NULL),
+(3, 'ผัดซีอิ๋วหมู', 50, 1, NULL),
+(4, 'ตำซั่ว', 45, 3, NULL),
+(5, 'มะนาวโซดา', 40, 8, NULL),
+(6, 'นมชมพูเย็น', 40, 8, NULL);
 
 -- --------------------------------------------------------
 
